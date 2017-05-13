@@ -1,11 +1,17 @@
 /* variables */
 
 $font: 'Glober', 'Roboto', sans-serif;
-$hyperlink-color: rgb(0, 128, 255);
+$hyperlink-color: #0080ff;
+$btn-bgcolor: #11a907;
+$primary-font-color: #000;
+$secondary-font-color: #7d7d7d;
+$orange-color: #e66e15;
+
 
 /* component styles */
 body{
     font-family: $font;
+    color: $primary-font-color;
 }
 a{
    color: $hyperlink-color;
