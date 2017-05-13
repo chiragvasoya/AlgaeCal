@@ -1,11 +1,12 @@
 /* variables */
 
 $font: 'Glober', 'Roboto', sans-serif;
-$hyperlink-color: #0080ff;
 $btn-bgcolor: #11a907;
 $primary-font-color: #000;
 $secondary-font-color: #7d7d7d;
 $orange-color: #e66e15;
+$green-color: #125902;
+$skyblue-color: #0080ff;
 
 /* mixins */
 @mixin drop-shadow($hr:0px, $ver:0px, $blur:11px, $spread:2px, $color:rgba(117,117,117,1)){
@@ -21,8 +22,39 @@ body{
     color: $primary-font-color;
 }
 a{
-   color: $hyperlink-color;
+   color: $skyblue-color;
    text-decoration: underline;
 }
 
+table{
+    border: 2px solid #000;
+}
+
 /* layout styles */
+.phone{
+    font-weight: 700;
+    font-size: 16px;
+    #ph-number{
+        color:$skyblue-color;
+    }
+}
+.speak-to-specialist{
+    display: block;
+    background-image: url(../images/phone%20icon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.product-intro{
+    background-image: url(../images/green.png);
+    p{
+        color: #fff;
+        display: block;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    h1{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
