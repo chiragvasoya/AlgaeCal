@@ -1,7 +1,9 @@
 /* variables */
+/* mixins */
 /* component styles */
 body {
-  font-family: "Glober", "Roboto", sans-serif; }
+  font-family: "Glober", "Roboto", sans-serif;
+  color: #000; }
 
 a {
   color: #0080ff;

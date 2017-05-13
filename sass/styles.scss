@@ -7,6 +7,13 @@ $primary-font-color: #000;
 $secondary-font-color: #7d7d7d;
 $orange-color: #e66e15;
 
+/* mixins */
+@mixin drop-shadow($hr:0px, $ver:0px, $blur:11px, $spread:2px, $color:rgba(117,117,117,1)){
+    -webkit-box-shadow: $hr $ver $blur $spread $color;
+    -moz-box-shadow: $hr $ver $blur $spread $color;
+    box-shadow: $hr $ver $blur $spread $color;
+    
+}
 
 /* component styles */
 body{
