@@ -12,6 +12,9 @@ a {
 table {
   border: 2px solid #000; }
 
+section {
+  padding: 30px; }
+
 /* layout styles */
 .phone {
   font-weight: 700;
@@ -36,3 +39,27 @@ table {
     color: #fff;
     font-size: 20px;
     font-weight: 700; }
+
+.btn-default {
+  background-color: #11a907;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #0c7805; }
+
+.btn-lg {
+  border-bottom: 6px solid #0c7805; }
+
+.price-package {
+  -webkit-box-shadow: 0px 0px 11px 2px #757575;
+  -moz-box-shadow: 0px 0px 11px 2px #757575;
+  box-shadow: 0px 0px 11px 2px #757575;
+  background-color: #fff;
+  padding: 20px; }
+
+.featured-package {
+  background-color: #0080ff; }
+  .featured-package > p {
+    text-transform: uppercase;
+    color: #fff; }
