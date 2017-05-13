@@ -1,0 +1,15 @@
+/* variables */
+
+$font: 'Glober', 'Roboto', sans-serif;
+$hyperlink-color: rgb(0, 128, 255);
+
+/* component styles */
+body{
+    font-family: $font;
+}
+a{
+   color: $hyperlink-color;
+   text-decoration: underline;
+}
+
+/* layout styles */
