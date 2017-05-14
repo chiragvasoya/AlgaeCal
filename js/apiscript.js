@@ -1,5 +1,9 @@
 var apihttp = new XMLHttpRequest();
 apihttp.onreadystatechange = function(){
+    var currentdate = new Date();
+   var datetime = currentdate.getDay();
+   var dayhours = addZero(currentdate.getHours());
+   var daymins = addZero(currentdate.getMinutes());
     
     if(this.readyState == 4 && this.status == 200) {
         apiObj = JSON.parse(this.responseText);
@@ -11,3 +15,10 @@ apihttp.onreadystatechange = function(){
 
 apihttp.open("GET", "https://www.algaecal.com/wp-json/acf/v2/options", true);
 apihttp.send();
+
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
