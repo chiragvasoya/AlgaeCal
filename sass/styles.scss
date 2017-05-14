@@ -37,6 +37,13 @@ table{
         font-weight: 700;
         color: $primary-font-color;
     }
+    td, th{
+        border-top: none !important;
+        font-weight: 700;
+        span{
+            display: block;
+        }
+    }
 }
 section{
     padding: 30px;
@@ -152,5 +159,70 @@ section{
     h2{
         font-weight: 700;
         text-align: center;
+    }
+}
+.usage{
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../images/green.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/green.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../images/green.png) 30 round;
+    
+    h3{
+        color: $orange-color;
+        font-weight: 700;
+    }
+    p{
+        color: $secondary-font-color;
+        text-align: left;
+    }
+    div{
+        padding: 10px 20px;
+        p{
+            color: $primary-font-color;
+            margin-bottom: 0px;
+            
+        }
+    }
+}
+.seen-on{
+     @include drop-shadow();
+    h3{
+        display: block;
+        background-color: $green-color;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    img{
+        display: inline-block;
+        padding: 10px;
+    }
+}
+.references{
+    h2{
+        color: $skyblue-color;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+footer{
+    nav{
+        ul{
+            li{
+                list-style-type: none;
+                display: inline-block;
+                border-right: 1px solid $secondary-font-color;
+                padding: 0px 10px;
+                a{
+                    color: $secondary-font-color;
+                    text-decoration: none;
+                }
+                &:last-child{
+                   border-right: none; 
+                }
+            }
+        }
     }
 }
