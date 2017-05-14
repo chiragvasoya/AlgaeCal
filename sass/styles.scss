@@ -28,6 +28,15 @@ a{
 
 table{
     border: 2px solid #000;
+    border-top: none;
+    caption{
+        border: 2px solid #000;
+        border-bottom: none;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: $primary-font-color;
+    }
 }
 section{
     padding: 30px;
@@ -77,12 +86,71 @@ section{
 .price-package{
     @include drop-shadow();
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 10px;
+    h2{
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 0px;    
+      margin-bottom: 0px;    
+    }
+    p{
+      margin-bottom: 0px;
+      color: $skyblue-color;
+      font-weight: 700;       
+    }
+    p.price{
+        color: $primary-font-color;
+        font-size: 26px;
+        span{
+            text-decoration: underline;
+            font-size: 10px;
+        }
+        
+    }
+    p.day-deal{
+        display: block;
+        color: $primary-font-color;
+        background-image: url(../images/highlight.png);
+        background-repeat: no-repeat;
+        background-position: 40px -2px;
+    }
+    .deal{
+        display: block;
+        background-image: url(../images/Ellipse2.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 84px;
+        height: 84px;
+        position: absolute;
+        top: 0px;
+        color: #fff;
+        font-weight: 700;
+        right: 0;
+        padding: 20px;
+        font-size: 22px;
+        span{
+            font-size: 12px;
+            margin-top: -5px;
+            display: block;
+        }
+     }
+}
+.regular-package{
+    padding: 10px;
 }
 .featured-package{
+    padding: 10px;
     background-color: $skyblue-color;
     >p{
-       text-transform: uppercase; 
-       color: #fff;    
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       color: #fff; 
+            
+    }
+}
+.supplement{
+    h2{
+        font-weight: 700;
+        text-align: center;
     }
 }
