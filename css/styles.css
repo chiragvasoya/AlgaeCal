@@ -247,4 +247,7 @@ footer nav ul li {
     padding: 10px 20px; }
     .usage div p {
       color: #000;
-      margin-bottom: 0px; } }
+      margin-bottom: 0px; }
+  .references .full-reference {
+    text-align: center;
+    display: block; } }
