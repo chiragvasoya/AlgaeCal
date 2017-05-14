@@ -221,3 +221,30 @@ footer nav ul li {
     text-decoration: none; }
   footer nav ul li:last-child {
     border-right: none; }
+
+/*styles for desktop and tablet*/
+@media only screen and (min-width: 768px) {
+  .phone {
+    float: right;
+    clear: right;
+    padding-top: 10px; }
+  .speak-to-specialist {
+    float: right;
+    clear: right; }
+  .product-intro h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center; }
+  .secondary-tagline {
+    padding: 10px; }
+  .supplement {
+    border-top: 1px solid #000;
+    margin-top: 20px; }
+  .usage p {
+    color: #7d7d7d;
+    text-align: center; }
+  .usage div {
+    padding: 10px 20px; }
+    .usage div p {
+      color: #000;
+      margin-bottom: 0px; } }

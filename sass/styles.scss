@@ -276,6 +276,45 @@ footer{
 
 /*styles for desktop and tablet*/
 @media only screen  and (min-width : 768px) {
+.phone{
+    float: right;
+    clear: right;
+    padding-top: 10px;
+}
+.speak-to-specialist{
+    float: right;
+    clear: right;
+}    
+.product-intro{
     
+    h1{
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+.secondary-tagline{
+    padding: 10px; 
+}
+.supplement{
+ border-top: 1px solid #000;
+ margin-top: 20px;        
+}    
+
+.usage{
+    
+    p{
+        color: $secondary-font-color;
+        text-align: center;
+    }
+    div{
+        padding: 10px 20px;
+        p{
+            color: $primary-font-color;
+            margin-bottom: 0px;
+            
+        }
+    }
+}    
 
 }
