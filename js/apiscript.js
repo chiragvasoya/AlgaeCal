@@ -4,6 +4,7 @@ apihttp.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200) {
         apiObj = JSON.parse(this.responseText);
         document.getElementById("ph-number").innerHTML = apiObj.acf.default_phone_number;
+        document.getElementById("guarantee-info").innerHTML = apiObj.acf.7yr_full_copy;
     }
     
 };
