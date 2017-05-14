@@ -3,6 +3,7 @@ apihttp.onreadystatechange = function(){
    
     if(this.readyState == 4 && this.status == 200) {
         apiObj = JSON.parse(this.responseText);
+        document.getElementById("ph-number").innerHTML = apiObj.acf.default_phone_number;
     }
     
 };
