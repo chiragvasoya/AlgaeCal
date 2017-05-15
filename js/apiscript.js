@@ -1,7 +1,7 @@
 var apihttp = new XMLHttpRequest();
 apihttp.onreadystatechange = function(){
     var currentdate = new Date();
-   var datetime = currentdate.getDay();
+   var day = currentdate.getDay();
    var dayhours = addZero(currentdate.getHours());
    var daymins = addZero(currentdate.getMinutes());
     
@@ -9,6 +9,8 @@ apihttp.onreadystatechange = function(){
         apiObj = JSON.parse(this.responseText);
         document.getElementById("ph-number").innerHTML = apiObj.acf.default_phone_number;
         document.getElementById("guarantee-info").innerHTML = apiObj.acf["7yr_full_copy"];
+        
+        
     }
     
 };
